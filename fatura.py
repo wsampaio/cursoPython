@@ -6,3 +6,4 @@ valor = input("Digite o valor da fatura: ")
 print("Olá,", nome)
 print("A sua fatura com vencimento em", diaVenc, "de", mesVenc, "no valor de R$", valor, "está fechada.")
 
+
