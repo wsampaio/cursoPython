@@ -19,3 +19,15 @@ def fizzbuzz(n):
 #print(fizzbuzz(5)) #deve devolver Buzz
 #print(fizzbuzz(15)) #deve devolver FizzBuzz
 #print(fizzbuzz(4)) #deve devolver 4
+
+#O resultado dos testes com seu programa foi:
+
+#***** [0.25 pontos]: Checando se Fizz é identificado corretamente (3) - Falhou *****
+#***** [0.25 pontos]: Checando se Fizz é identificado corretamente (6) - Falhou *****
+#***** [0.25 pontos]: Checando se Fizz é identificado corretamente (12) - Falhou *****
+#***** [0.25 pontos]: Checando se Fizz é identificado corretamente (93) - Falhou *****
+#***** [0.25 pontos]: Checando se Buzz é identificado corretamente (5) - Falhou *****
+#***** [0.25 pontos]: Checando se Buzz é identificado corretamente (20) - Falhou *****
+#***** [0.25 pontos]: Checando se Buzz é identificado corretamente (230) - Falhou *****
+#***** [0.25 pontos]: Checando se Buzz é identificado corretamente (12355) - Falhou ****
+#***** [0.25 pontos]: Checando se FizzBuzz é identificado corretamente (15) 
