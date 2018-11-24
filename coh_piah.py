@@ -81,21 +81,61 @@ def calcula_assinatura(texto):
     lstFrases = []
     lstPalavras = []
 
+#    print("lstSentencas = ", lstSentencas)
+
     for sentenca in lstSentencas:
-        lstFrases.append(separa_frases(sentenca))
+        lstFrases += separa_frases(sentenca)
+
+#    print("lstFrases = ", lstFrases)
 
     for frase in lstFrases:
-        lstPalavras.append(separa_palavras(frase))
+        lstPalavras += separa_palavras(frase)
 
 
-    print(lstPalavras)
+#    print("lstPalavras = ", lstPalavras)
+
+
+    somaLetras = 0
+    ttlPalavras = 0
+
+    for palavra in lstPalavras:
+        somaLetras += len(palavra)
+
+    ttlPalavras = len(lstPalavras)
+    mediaTamPalavras = somaLetras/ttlPalavras
+    relacTT = n_palavras_diferentes(lstPalavras)/ttlPalavras
+    razaoHL = n_palavras_unicas(lstPalavras)/ttlPalavras
+
+
+
 
 
 
     lstTemp = [5.571428571428571, 0.8253968253968254, 0.6984126984126984, 210.0, 4.5, 45.888888888888886]
-    lstTemp = [0, 0, 0, 0, 0, 0]
+
+
+    lstTemp = [
+        mediaTamPalavras, 
+        relacTT,
+        razaoHL, 
+        0, 
+        0, 
+        0
+    ]
+
+
     return lstTemp
     #pass
+
+
+
+
+
+
+
+
+
+#===============================================================================
 
 def avalia_textos(textos, ass_cp):
     '''IMPLEMENTAR. Essa funcao recebe uma lista de textos e deve devolver o numero (1 a n) do texto com maior probabilidade de ter sido infectado por COH-PIAH.'''
