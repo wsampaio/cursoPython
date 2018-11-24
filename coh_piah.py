@@ -75,7 +75,27 @@ def compara_assinatura(as_a, as_b):
 
 def calcula_assinatura(texto):
     '''IMPLEMENTAR. Essa funcao recebe um texto e deve devolver a assinatura do texto.'''
-    pass
+
+
+    lstSentencas = separa_sentencas(texto)
+    lstFrases = []
+    lstPalavras = []
+
+    for sentenca in lstSentencas:
+        lstFrases.append(separa_frases(sentenca))
+
+    for frase in lstFrases:
+        lstPalavras.append(separa_palavras(frase))
+
+
+    print(lstPalavras)
+
+
+
+    lstTemp = [5.571428571428571, 0.8253968253968254, 0.6984126984126984, 210.0, 4.5, 45.888888888888886]
+    lstTemp = [0, 0, 0, 0, 0, 0]
+    return lstTemp
+    #pass
 
 def avalia_textos(textos, ass_cp):
     '''IMPLEMENTAR. Essa funcao recebe uma lista de textos e deve devolver o numero (1 a n) do texto com maior probabilidade de ter sido infectado por COH-PIAH.'''
@@ -83,9 +103,21 @@ def avalia_textos(textos, ass_cp):
 
 
 
+texto = "Muito além, nos confins inexplorados da região mais brega da Borda Ocidental desta Galáxia, há um pequeno sol amarelo e esquecido. Girando em torno deste sol, a uma distancia de cerca de 148 milhões de quilômetros, há um planetinha verde-azulado absolutamente insignificante, cujas formas de vida, descendentes de primatas, são tão extraordinariamente primitivas que ainda acham que relógios digitais são uma grande ideia."
+
+
+lstVer = calcula_assinatura(texto)
+
+lstEsp = [5.571428571428571, 0.8253968253968254, 0.6984126984126984, 210.0, 4.5, 45.888888888888886]
 
 
 
 
+print()
+print(lstVer)
+print(lstEsp)
+print()
+print(lstVer == lstEsp)
+print()
 
 #.
